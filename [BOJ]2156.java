@@ -32,9 +32,7 @@ public class Main {
             dp[i] = Math.max(dp[i-1], dp[i]);
         }
 
-        int answer = 0;
-        for (int dpValue : dp) answer = Math.max(answer, dpValue);
-        System.out.println(answer);
+        System.out.println(dp[n-1]);
 
         sc.close();
 
